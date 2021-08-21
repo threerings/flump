@@ -47,12 +47,13 @@ public class SwfTexture
         const ns :String = useNamespace ? lib.location + "/" : "";
         const disp :DisplayObject = (instance is BitmapData) ?
             new Bitmap(BitmapData(instance)) : DisplayObject(instance);
-        return new SwfTexture(ns + tex.symbol, disp, scale, quality);
+        return new SwfTexture(ns + tex.symbol, disp, scale, quality,tex.baseClass);
     }
 
-    public function SwfTexture (symbol :String, disp :DisplayObject, scale :Number, quality :String) {
+    public function SwfTexture (symbol :String, disp :DisplayObject, scale :Number, quality :String, baseClass:String=null) {
         this.symbol = symbol;
         this.quality = quality;
+        this.baseClass = baseClass;
 
         // wrap object twice for convenience
         const wrapper :Sprite = new Sprite();

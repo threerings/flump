@@ -1,1 +1,10 @@
+airsdk
+flex
 exporter/src/test/export
+exporter/buildWithAnt.bat
+exporter/debugWithAdl.bat
+exporter/dist
+exporter/flump-exporter.as3proj
+runtime/dist
+runtime/buildWithAnt.bat
+runtime/Flump-runtime.as3proj

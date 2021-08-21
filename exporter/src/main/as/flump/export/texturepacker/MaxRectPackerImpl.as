@@ -158,7 +158,7 @@ public class MaxRectPackerImpl {
 
         [Inline]
         final protected function isContainedIn(a:Rectangle, b:Rectangle):Boolean {
-            return a.x >= b.x && a.y >= b.y	&& a.x + a.width <= b.x + b.width && a.y + a.height <= b.y + b.height;
+            return a.x >= b.x && a.y >= b.y    && a.x + a.width <= b.x + b.width && a.y + a.height <= b.y + b.height;
         }
 
 
